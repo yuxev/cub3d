@@ -1,0 +1,224 @@
+[
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_cursor.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_cursor.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_cursor.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_cursor.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_exit.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_exit.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_exit.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_exit.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_images.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_images.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_images.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_images.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_init.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_init.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_init.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_init.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_keys.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_keys.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_keys.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_keys.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_loop.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_loop.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_loop.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_loop.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_monitor.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_monitor.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_monitor.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_monitor.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_mouse.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_mouse.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_mouse.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_mouse.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_put_pixel.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_put_pixel.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_put_pixel.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_put_pixel.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/mlx_window.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_window.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/mlx_window.c",
+  "output": "CMakeFiles/mlx42.dir/src/mlx_window.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/utils/mlx_error.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_error.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_error.c",
+  "output": "CMakeFiles/mlx42.dir/src/utils/mlx_error.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/utils/mlx_list.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_list.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_list.c",
+  "output": "CMakeFiles/mlx42.dir/src/utils/mlx_list.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/utils/mlx_utils.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_utils.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_utils.c",
+  "output": "CMakeFiles/mlx42.dir/src/utils/mlx_utils.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/utils/mlx_compare.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_compare.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/utils/mlx_compare.c",
+  "output": "CMakeFiles/mlx42.dir/src/utils/mlx_compare.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/font/mlx_font.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/font/mlx_font.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/font/mlx_font.c",
+  "output": "CMakeFiles/mlx42.dir/src/font/mlx_font.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/textures/mlx_png.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/textures/mlx_png.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/textures/mlx_png.c",
+  "output": "CMakeFiles/mlx42.dir/src/textures/mlx_png.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/textures/mlx_texture.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/textures/mlx_texture.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/textures/mlx_texture.c",
+  "output": "CMakeFiles/mlx42.dir/src/textures/mlx_texture.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/src/textures/mlx_xpm42.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/src/textures/mlx_xpm42.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/src/textures/mlx_xpm42.c",
+  "output": "CMakeFiles/mlx42.dir/src/textures/mlx_xpm42.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/lib/png/lodepng.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/lib/png/lodepng.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/lib/png/lodepng.c",
+  "output": "CMakeFiles/mlx42.dir/lib/png/lodepng.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/lib/glad/glad.c.o -c /Users/aasselma/Desktop/CUB3d/MLX42/lib/glad/glad.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/MLX42/lib/glad/glad.c",
+  "output": "CMakeFiles/mlx42.dir/lib/glad/glad.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/mlx_vert_shader.c.o -c /Users/aasselma/Desktop/CUB3d/build/mlx_vert_shader.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/mlx_vert_shader.c",
+  "output": "CMakeFiles/mlx42.dir/mlx_vert_shader.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build",
+  "command": "/usr/bin/clang  -I/Users/aasselma/Desktop/CUB3d/MLX42/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks -g -std=c11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/mlx42.dir/mlx_frag_shader.c.o -c /Users/aasselma/Desktop/CUB3d/build/mlx_frag_shader.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/mlx_frag_shader.c",
+  "output": "CMakeFiles/mlx42.dir/mlx_frag_shader.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/context.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/context.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/context.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/init.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/init.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/init.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/input.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/input.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/input.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/monitor.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/monitor.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/vulkan.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/vulkan.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/window.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/window.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/window.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_init.m",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_init.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_joystick.m",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_joystick.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_monitor.m",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_monitor.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_window.m",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_window.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_time.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/cocoa_time.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/posix_thread.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/posix_thread.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/nsgl_context.m",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/nsgl_context.m",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/egl_context.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/egl_context.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/include -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src -I/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-build/src -g -std=c99 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -D LODEPNG_NO_COMPILE_ENCODER -D LODEPNG_NO_COMPILE_ANCILLARY_CHUNKS -D NDEBUG -Wextra -Wall -Werror -Wunreachable-code -Wno-char-subscripts -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Ofast -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/osmesa_context.c",
+  "file": "/Users/aasselma/Desktop/CUB3d/build/_deps/glfw-src/src/osmesa_context.c",
+  "output": "_deps/glfw-build/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+}
+]
