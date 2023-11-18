@@ -6,7 +6,7 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 16:10:27 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/15 21:26:12 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/18 09:18:20 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,11 @@
 # include <stdio.h>
 #include <stdbool.h>
 
-#define CUB_SIZE 30
+#define CUB_SIZE 20
 #define WIDTH 1080
 #define HEIGH 900
-#define MIN 2
+#define MIN 3
+#define DIC 5
 #define W_COLOR 0x960F18FF
 #define G_COLOR 0XB9B3B3FF
 #define P_COLOR 0x114E61FF
@@ -44,6 +45,7 @@ typedef struct s_point
 
 typedef struct
 {
+	int				is_vertcl;
 	int				sky[3];
 	int				floor[3];
 	char			**map_db;
@@ -80,13 +82,12 @@ typedef struct s_check {
 }		t_check;
 
 
-int				start_game(s_main *m);
-void			ray_casting__(s_main *m, float pov);
-void			ray_casting(s_main *m, float pov);
-void			draw_line(s_main *m, float x2, float y2);
-void			mini_map(s_main *m);
-
-void			texture_image(s_main *m, t_point txt, t_point img, mlx_texture_t *txtr);
+int		start_game(s_main *m);
+void	horz_raycasting(s_main *m, float pov);
+void	vtcl_raycasting(s_main *m, float pov);
+void	draw_player(float x, float y, mlx_image_t *img);
+void	mini_map(s_main *m);
+void	texture_image(s_main *m, t_point txt, t_point img, mlx_texture_t *txtr);
 
 /*----------------------------PARCING-------------------------------*/
 void	check_ceil(char *s, s_main *cub);

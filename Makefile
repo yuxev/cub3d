@@ -2,7 +2,7 @@ NAME = CUB3D
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
+CFLAGS = -Wall -Wextra -Werror #-fsanitize=address -g
 
 GLFW = MLX42/build/_deps/glfw-build/src/libglfw3.a
 

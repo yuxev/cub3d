@@ -6,11 +6,16 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:23:53 by aasselma          #+#    #+#             */
-/*   Updated: 2023/11/15 19:02:37 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/17 12:40:40 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "CUB3D.h"
+
+int get_rgba(int r, int g, int b, int a)
+{
+    return (r << 24 | g << 16 | b << 8 | a);
+}
 
 void	get_distance(s_main	*m, float  pov)
 {
@@ -18,8 +23,8 @@ void	get_distance(s_main	*m, float  pov)
 	m->amodi_y = m->s_y + 1;
 	m->ofo9i_x = m->s_x + 1;
 	m->ofo9i_y = m->s_y + 1;
-	ray_casting__(m, pov);
-	ray_casting(m, pov);
+	horz_raycasting(m, pov);
+	vtcl_raycasting(m, pov);
 	float	a;
 	float	b;
 	float	c1;
@@ -31,19 +36,20 @@ void	get_distance(s_main	*m, float  pov)
 	a = m->s_x - m->ofo9i_x;
 	b = m->s_y - m->ofo9i_y;
 	c2 = sqrt((a * a) + (b * b));
-	if (c2 <= c1)
+	if (c2 >= c1)
 	{
-		m->goal_x = m->ofo9i_x;
-		m->goal_y = m->ofo9i_y;
-		m->distance = c2;
-	}
-	else
-	{
+		m->is_vertcl = 0;
 		m->goal_x = m->amodi_x;
 		m->goal_y = m->amodi_y;
 		m->distance = c1;
 	}
-	draw_line(m, m->goal_x, m->goal_y);
+	else
+	{
+		m->is_vertcl = 1;
+		m->goal_x = m->ofo9i_x;
+		m->goal_y = m->ofo9i_y;
+		m->distance = c2;
+	}
 	m->distance = m->distance * cos((pov - m->pov) * RAD);
 }
 
@@ -60,31 +66,36 @@ void	draw_walls(s_main *m, int i)
 	p1.y = (HEIGH / 2) - (v / 2);
 	p2.x = i;
 	p2.y = (HEIGH / 2) + (v / 2);
-
 	img.y = p1.y;
 	img.x = i;
 	txt.y = 0;
 	m->wall_h = v;
 	m->last_wall_p = p2.y;
-	if (fmod(m->goal_y, CUB_SIZE) == 0)
+	if (m->is_vertcl == 0)
 	{
-		txt.x = fmod(m->goal_x, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[0]);
+		if (fmod(m->goal_x, CUB_SIZE) == 0)
+		{
+			txt.x = fmod(m->goal_y, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
+			texture_image(m, txt, img, &m->txtr[2]);
+		}
+		else if (fmod(m->goal_x, CUB_SIZE) > CUB_SIZE - 0.00015)
+		{
+			txt.x = fmod(m->goal_y, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
+			texture_image(m, txt, img, &m->txtr[3]);
+		}
 	}
-	else if (fmod(m->goal_y, CUB_SIZE) > CUB_SIZE - 0.00015)
+	else
 	{
-		txt.x = fmod(m->goal_x, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[1]);
-	}
-	if (fmod(m->goal_x, CUB_SIZE) == 0)
-	{
-		txt.x = fmod(m->goal_y, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[2]);
-	}
-	else if (fmod(m->goal_x, CUB_SIZE) > CUB_SIZE - 0.00015)
-	{
-		txt.x = fmod(m->goal_y, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[3]);
+		if (fmod(m->goal_y, CUB_SIZE) == 0)
+		{
+			txt.x = fmod(m->goal_x, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
+			texture_image(m, txt, img, &m->txtr[0]);
+		}
+		else if (fmod(m->goal_y, CUB_SIZE) > CUB_SIZE - 0.00015)
+		{
+			txt.x = fmod(m->goal_x, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
+			texture_image(m, txt, img, &m->txtr[1]);
+		}
 	}
 }
 
@@ -97,7 +108,6 @@ void	hook(void* param)
 	int	i = 0;
 	float	pov = m->pov - 30;
 	float	fov = 60;
-	float	rays = WIDTH;
 	int	yy;
 	int	xx;
 	yy = 0;
@@ -107,13 +117,14 @@ void	hook(void* param)
 		while(xx != WIDTH)
 		{
 			if (yy <= (HEIGH / 2))
-				mlx_put_pixel(m->g_image, xx++, yy, 0x87CEEBFF);
+				mlx_put_pixel(m->g_image, xx, yy, get_rgba(m->sky[0],m->sky[1],m->sky[2], 255));
 			else
-				mlx_put_pixel(m->g_image, xx++, yy, 0x151F2CFF);
+				mlx_put_pixel(m->g_image, xx, yy, get_rgba(m->floor[0],m->floor[1],m->floor[2], 255));
+			xx++;
 		}
 		yy++;
 	}
-	while(i <= rays)
+	while(i <= WIDTH)
 	{
 		if (pov > 360)
 			pov -= 360;
@@ -121,7 +132,7 @@ void	hook(void* param)
 			pov += 360;
 		get_distance(m, pov);
 		draw_walls(m, i);
-		pov += fov / rays;
+		pov += fov / WIDTH;
 		i++;
 	}
 }
@@ -132,12 +143,12 @@ int	check_nm(s_main *m, float y, float x, int sign)
 	float	s_y;
 	float	s_x;
 
-	s_y	= (m->s_y + (y * 5));
-	s_x	= (m->s_x + (x * 5));
+	s_y	= (m->s_y + (y * DIC));
+	s_x	= (m->s_x + (x * DIC));
 	if (sign == 0)
 	{
-		s_y	= (m->s_y - (y * 5));
-		s_x	= (m->s_x - (x * 5));
+		s_y	= (m->s_y - (y * DIC));
+		s_x	= (m->s_x - (x * DIC));
 	}
 	if (m->map[(int)(s_y / CUB_SIZE)][(int)(m->s_x / CUB_SIZE)] == '1' 
 		&& m->map[(int)(m->s_y / CUB_SIZE)][(int)(s_x / CUB_SIZE)] == '1')
@@ -184,6 +195,7 @@ void	player_moves(void	*param)
 		m->pov -= 360;
 	if (m->pov < 0)
 		m->pov += 360;
+	draw_player(m->s_x, m->s_y, m->image);
 }
 
 int start_game(s_main *m)
