@@ -6,7 +6,7 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 16:10:27 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/18 09:18:20 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/20 01:52:28 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ typedef struct
 	int				floor[3];
 	char			**map_db;
 	char			**map;
+	char			**arr;
 	char			*av;
 	int				w;
 	int				h;
@@ -85,14 +86,19 @@ typedef struct s_check {
 int		start_game(s_main *m);
 void	horz_raycasting(s_main *m, float pov);
 void	vtcl_raycasting(s_main *m, float pov);
+int		get_rgba(int r, int g, int b, int a);
+void	ground_sky(s_main *m);
 void	draw_player(float x, float y, mlx_image_t *img);
+void	ft_control(s_main *m);
 void	mini_map(s_main *m);
-void	texture_image(s_main *m, t_point txt, t_point img, mlx_texture_t *txtr);
+void	ft_texture(s_main *m, int i);
+
 
 /*----------------------------PARCING-------------------------------*/
+void	check_map(s_main *m, int i, int j);
 void	check_ceil(char *s, s_main *cub);
 void	check_news(s_main *m, int i);
-void	check_map(s_main *m, int i);
+void	txtrs_array(s_main	*m);
 void	ft_errorr(char *s);
 
 
@@ -100,6 +106,9 @@ int	check_floor(char *s, s_main *cub);
 int	skip_spaces(char *s, int index);
 int	check_path(char **s, int ch);
 int	check_path(char **s, int ch);
+int	is_valid_line(char *line);
+int	count_map_lines(int fd);
+int	valid_line(char *line);
 int	ft_count(char	*s1);
 
 char	*skip_s(char *s);

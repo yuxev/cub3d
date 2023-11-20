@@ -2,7 +2,7 @@ NAME = CUB3D
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror #-fsanitize=address -g
+CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
 
 GLFW = MLX42/build/_deps/glfw-build/src/libglfw3.a
 
@@ -14,7 +14,8 @@ FLG = -framework Cocoa -framework OpenGL -framework IOKit
 
 RM = rm -rf
 
-SRC =	ray_casting.c mini_map.c main.c texture.c parsing/parsing.c parsing/parcing2.c \
+SRC =	ray_casting.c player_control.c mini_map.c main.c texture.c utils.c \
+		parsing/parsing.c parsing/parcing2.c \
 		parsing/check1.c parsing/check2.c parsing/chyata.c \
 		parsing/gnl/get_next_line.c \
 		parsing/gnl/get_next_line_utils.c \

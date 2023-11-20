@@ -6,7 +6,7 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 05:34:25 by aasselma          #+#    #+#             */
-/*   Updated: 2023/11/14 05:44:37 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:35:57 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	draw_map(mlx_image_t *img, int32_t y, int32_t x, int32_t clr)
 	h = s * y;
 	y = 0;
 	x = 0;
-	while(y != s)
+	while (y != s)
 	{
 		while (x != CUB_SIZE)
 		{
@@ -38,7 +38,7 @@ void	draw_map(mlx_image_t *img, int32_t y, int32_t x, int32_t clr)
 	}
 }
 
-void    initialize_player_pov(s_main *m, char c)
+void	initialize_player_pov(s_main *m, char c)
 {
 	if (c == 'E')
 		m->pov = 0;
@@ -50,13 +50,13 @@ void    initialize_player_pov(s_main *m, char c)
 		m->pov = 270;
 }
 
-void    mini_map(s_main *m)
+void	mini_map(s_main *m)
 {
-	int y;
-	int x;
-	
+	int	y;
+	int	x;
+
 	y = 0;
-	while(m->map[y] != NULL)
+	while (m->map[y] != NULL)
 	{
 		x = 0;
 		while (m->map[y][x])
@@ -65,14 +65,14 @@ void    mini_map(s_main *m)
 				draw_map(m->image, y, x, W_COLOR);
 			else if (m->map[y][x] == '0')
 				draw_map(m->image, y, x, G_COLOR);
-			if (m->map[y][x] == 'N' || m->map[y][x] == 'S' 
+			if (m->map[y][x] == 'N' || m->map[y][x] == 'S'
 				|| m->map[y][x] == 'E' || m->map[y][x] == 'W')
-				{
-					m->s_x = (x * CUB_SIZE) + 18;
-					m->s_y = (y * CUB_SIZE) + 18;
-					initialize_player_pov(m, m->map[y][x]),
-					m->map[y][x] = '0';
-				}
+			{
+				m->s_x = (x * CUB_SIZE) + 18;
+				m->s_y = (y * CUB_SIZE) + 18;
+				initialize_player_pov(m, m->map[y][x]),
+				m->map[y][x] = '0';
+			}
 			x++;
 		}
 		y++;
