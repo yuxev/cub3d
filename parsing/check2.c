@@ -6,7 +6,7 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:45:47 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/20 19:30:53 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/21 00:42:26 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,10 @@ int	check_path(char **s, int ch)
 	ch = 1;
 	fd = open(s[1], O_RDONLY);
 	if (fd == -1)
-		ft_errorr("57");
+	{
+		printf("%s\n", s[1]);
+		ft_errorr("isn't exist");
+	}
 	return (1);
 }
 

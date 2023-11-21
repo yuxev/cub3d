@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:23:53 by aasselma          #+#    #+#             */
-/*   Updated: 2023/11/20 23:26:10 by aziyani          ###   ########.fr       */
+/*   Updated: 2023/11/20 22:12:16 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,6 @@ void	hook(void *param)
 		pov += fov / WIDTH;
 		i++;
 	}
-	system("leaks CUB3D");
 }
 
 int	start_game(s_main *m)

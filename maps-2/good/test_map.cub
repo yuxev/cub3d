@@ -1,0 +1,16 @@
+SO ./images/40_black.png
+NO ./images/37_texture.png
+WE ./images/39_Black.png
+EA ./images/40_texture.png
+
+F 18,53,25
+C 153,204,255
+
+111111111111
+1         11
+1          1
+111111111111
+10S000000001
+111111111111
+11         1
+111111111111

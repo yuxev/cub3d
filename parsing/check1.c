@@ -6,7 +6,7 @@
 /*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:40:24 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/21 02:02:34 by aziyani          ###   ########.fr       */
+/*   Updated: 2023/11/18 12:53:12 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,16 +68,8 @@ int	check_floor(char *s, s_main *cub)
 	int		count;
 	char	**str;
 	char	*s1;
-	int		i;
 
 	s1 = check_f(s);
-	i = 0;
-	while (s1[i])
-	{
-		if (!ft_isdigit(s1[i]) && s1[i] != ',' && s1[i] != '\n' && s1[i] != ' ')
-			ft_errorr("your F not valid");
-		i++;
-	}
 	str = ft_split(s1, ',');
 	count = ft_count(s1);
 	if (str[0] && str[1] && str[2] && !str[3] && count == 2)
@@ -124,16 +116,8 @@ void	check_ceil(char *s, s_main *cub)
 	char	**str;
 	char	*s1;
 	int		count;
-	int		i;
 
 	s1 = check_c(s);
-	i = 0;
-	while (s1[i])
-	{
-		if (!ft_isdigit(s1[i]) && s1[i] != ',' && s1[i] != '\n' && s1[i] != ' ')
-			ft_errorr("your C not valid");
-		i++;
-	}
 	str = ft_split(s1, ',');
 	count = ft_count(s1);
 	if (str[0] && str[1] && str[2] && !str[3] && count == 2)

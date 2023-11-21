@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 22:40:51 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/21 01:16:14 by aziyani          ###   ########.fr       */
+/*   Updated: 2023/11/20 23:56:53 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	part_two(s_main *m, int i)
 void	ft_help(char **s, t_check ch, s_main *m, int i)
 {
 	if (!s[0])
-		ft_errorr("invalid parametres!");
+		ft_errorr("invalid map!");
 	else if (!ft_strncmp("NO", s[0], 3))
 		check_path(s, ch.no);
 	else if (!ft_strncmp("SO", s[0], 3))
@@ -57,20 +57,8 @@ void	ft_help(char **s, t_check ch, s_main *m, int i)
 	else if (!ft_strncmp("F", s[0], 2))
 		check_floor(m->map_db[i], m);
 	else
-		ft_errorr("invalid parametres!");
+		ft_errorr("invalid map!");
 }
-
-// void	ft_free(char **s)
-// {
-// 	int	k;
-
-// 	if (s)
-// 	{
-// 		while(s[k])
-// 			free(s[k++]);
-// 		free(s);
-// 	}
-// }
 
 int	part_one(s_main *m)
 {
@@ -78,14 +66,12 @@ int	part_one(s_main *m)
 	t_check	ch;
 	int		i;
 	int		j;
-	int		k;
 
 	ch = initialize_check();
 	i = 0;
 	j = 0;
 	while (j < 6)
 	{
-		k = 0;
 		if (ft_strlen(m->map_db[i]) == 0)
 		{
 			i++;
@@ -93,16 +79,9 @@ int	part_one(s_main *m)
 		}
 		s = ft_split(m->map_db[i], ' ');
 		ft_help(s, ch, m, i);
-		if (s)
-		{
-			while(s[k])
-				free(s[k++]);
-			free(s);
-		}
 		j++;
 		i++;
 	}
-	// while(1);
 	part_two(m, i);
 	return (0);
 }
