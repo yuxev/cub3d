@@ -6,7 +6,7 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 16:19:32 by aasselma          #+#    #+#             */
-/*   Updated: 2023/11/19 18:17:54 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/21 10:51:28 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	horz_texture(s_main *m, t_point img, t_point txt)
 	else if (fmod(m->goal_x, CUB_SIZE) > CUB_SIZE - 0.00015)
 	{
 		txt.x = fmod(m->goal_y, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[1]);
+		texture_image(m, txt, img, &m->txtr[2]);
 	}
 }
 
@@ -56,12 +56,12 @@ void	vtcl_texture(s_main *m, t_point img, t_point txt)
 	if (fmod(m->goal_y, CUB_SIZE) == 0)
 	{
 		txt.x = fmod(m->goal_x, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[2]);
+		texture_image(m, txt, img, &m->txtr[3]);
 	}
 	else if (fmod(m->goal_y, CUB_SIZE) > CUB_SIZE - 0.00015)
 	{
 		txt.x = fmod(m->goal_x, CUB_SIZE) * (m->txtr->width / CUB_SIZE);
-		texture_image(m, txt, img, &m->txtr[3]);
+		texture_image(m, txt, img, &m->txtr[1]);
 	}
 }
 

@@ -1,10 +1,10 @@
-SO ./images/40_black.png
-NO ./images/37_texture.png
-WE ./images/39_Black.png
-EA ./images/40_texture.png
+SO ./images/38_black.png
+NO ./images/39_black.png
+WE ./images/40_black.png
+EA ./images/41_black.png
 
-F 0,0,0
-C 0,0,0
+F 34,23,42
+C 32,45,200
 
 111111111111111111111
 101000001000000000001

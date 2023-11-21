@@ -6,7 +6,7 @@
 /*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:23:53 by aasselma          #+#    #+#             */
-/*   Updated: 2023/11/20 22:12:16 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/21 11:53:58 by aasselma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,25 @@ void	hook(void *param)
 	}
 }
 
+void	get_textures(s_main *m)
+{
+	int	i;
+
+	i = 0;
+	while (i != 4)
+	{
+		if (!ft_strncmp("EA", m->arr[i], 2))
+			m->txtr[0] = *mlx_load_png(m->arr[i] + 3);
+		else if (!ft_strncmp("NO", m->arr[i], 2))
+			m->txtr[1] = *mlx_load_png(m->arr[i] + 3);
+		else if (!ft_strncmp("WE", m->arr[i], 2))
+			m->txtr[2] = *mlx_load_png(m->arr[i] + 3);
+		else if (!ft_strncmp("SO", m->arr[i], 2))
+			m->txtr[3] = *mlx_load_png(m->arr[i] + 3);
+		i++;
+	}
+}
+
 int	start_game(s_main *m)
 {
 	m->mlx = mlx_init(WIDTH, HEIGH, "CUB3D", false);
@@ -93,10 +112,7 @@ int	start_game(s_main *m)
 	m->image = mlx_new_image(m->mlx, WIDTH, HEIGH);
 	mlx_image_to_window(m->mlx, m->image, 0, 0);
 	m->txtr = malloc(4 * sizeof(mlx_texture_t));
-	m->txtr[0] = *mlx_load_png(m->arr[0] + 3);
-	m->txtr[1] = *mlx_load_png(m->arr[1] + 3);
-	m->txtr[2] = *mlx_load_png(m->arr[2] + 3);
-	m->txtr[3] = *mlx_load_png(m->arr[3] + 3);
+	get_textures(m);
 	mlx_loop_hook(m->mlx, &hook, m);
 	mlx_loop(m->mlx);
 	return (EXIT_SUCCESS);
