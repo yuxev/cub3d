@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 22:40:51 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/20 01:50:06 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/21 01:16:14 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,18 +60,32 @@ void	ft_help(char **s, t_check ch, s_main *m, int i)
 		ft_errorr("invalid parametres!");
 }
 
+// void	ft_free(char **s)
+// {
+// 	int	k;
+
+// 	if (s)
+// 	{
+// 		while(s[k])
+// 			free(s[k++]);
+// 		free(s);
+// 	}
+// }
+
 int	part_one(s_main *m)
 {
 	char	**s;
 	t_check	ch;
 	int		i;
 	int		j;
+	int		k;
 
 	ch = initialize_check();
 	i = 0;
 	j = 0;
 	while (j < 6)
 	{
+		k = 0;
 		if (ft_strlen(m->map_db[i]) == 0)
 		{
 			i++;
@@ -79,9 +93,16 @@ int	part_one(s_main *m)
 		}
 		s = ft_split(m->map_db[i], ' ');
 		ft_help(s, ch, m, i);
+		if (s)
+		{
+			while(s[k])
+				free(s[k++]);
+			free(s);
+		}
 		j++;
 		i++;
 	}
+	// while(1);
 	part_two(m, i);
 	return (0);
 }
