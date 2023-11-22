@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   chyata.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 13:20:37 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/20 01:50:42 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/22 00:52:18 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,18 @@ int	ft_count(char	*s1)
 	return (count);
 }
 
-// int	valid_line(char *line)
-// {
-// 	int	i;
+void	ft_free(char **s)
+{
+	int	i;
 
-// 	i = 0;
-// 	while (line[i])
-// 	{
-// 		if (line[i] == '1')
-// 			return (1);
-// 		i++;
-// 	}
-// 	return (0);
-// }
+	i = 0;
+	while (s[i])
+	{
+		free(s[i]);
+		i++;
+	}
+	free(s);
+}
 
 int	is_valid_line(char *line)
 {

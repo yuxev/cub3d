@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   CUB3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 16:10:27 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/20 01:52:28 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/22 01:35:19 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,14 +95,15 @@ void	ft_texture(s_main *m, int i);
 
 
 /*----------------------------PARCING-------------------------------*/
+void	check_floor(char *s, s_main *cub, char	**str, char	*s1);
+void	check_ceil(char *s, s_main *cub, char	**str, char	*s1);
 void	check_map(s_main *m, int i, int j);
-void	check_ceil(char *s, s_main *cub);
 void	check_news(s_main *m, int i);
 void	txtrs_array(s_main	*m);
 void	ft_errorr(char *s);
+void	ft_free(char **s);
 
 
-int	check_floor(char *s, s_main *cub);
 int	skip_spaces(char *s, int index);
 int	check_path(char **s, int ch);
 int	check_path(char **s, int ch);

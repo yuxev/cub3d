@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 22:40:51 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/20 23:56:53 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/22 01:35:40 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,9 @@ void	ft_help(char **s, t_check ch, s_main *m, int i)
 	else if (!ft_strncmp("EA", s[0], 3))
 		check_path(s, ch.ea);
 	else if (!ft_strncmp("C", s[0], 2))
-		check_ceil(m->map_db[i], m);
+		check_ceil(m->map_db[i], m, NULL, NULL);
 	else if (!ft_strncmp("F", s[0], 2))
-		check_floor(m->map_db[i], m);
+		check_floor(m->map_db[i], m, NULL, NULL);
 	else
 		ft_errorr("invalid map!");
 }
@@ -79,6 +79,7 @@ int	part_one(s_main *m)
 		}
 		s = ft_split(m->map_db[i], ' ');
 		ft_help(s, ch, m, i);
+		ft_free(s);
 		j++;
 		i++;
 	}

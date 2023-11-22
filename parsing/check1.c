@@ -6,7 +6,7 @@
 /*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:40:24 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/18 12:53:12 by aziyani          ###   ########.fr       */
+/*   Updated: 2023/11/22 01:35:22 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,19 +62,17 @@ char	*check_f(char *str)
 	return (res);
 }
 
-int	check_floor(char *s, s_main *cub)
+void	check_floor(char *s, s_main *cub, char	**str, char	*s1)
 {
-	int		j;
 	int		count;
-	char	**str;
-	char	*s1;
 
 	s1 = check_f(s);
+	free(s);
 	str = ft_split(s1, ',');
 	count = ft_count(s1);
+	free(s1);
 	if (str[0] && str[1] && str[2] && !str[3] && count == 2)
 	{
-		j = 0;
 		cub->floor[0] = ft_atoi(str[0]);
 		if (cub->floor[0] < 0 || cub->floor[0] > 256)
 			ft_errorr("more than 255");
@@ -84,10 +82,13 @@ int	check_floor(char *s, s_main *cub)
 		cub->floor[2] = ft_atoi(str[2]);
 		if (cub->floor[2] < 0 || cub->floor[2] > 256)
 			ft_errorr("more than 255");
+		ft_free(str);
 	}
 	else
+	{
+		ft_free(str);
 		ft_errorr("bad arguments");
-	return (1);
+	}
 }
 
 char	*check_c(char *str)
@@ -111,15 +112,15 @@ char	*check_c(char *str)
 	return (res);
 }
 
-void	check_ceil(char *s, s_main *cub)
+void	check_ceil(char *s, s_main *cub, char	**str, char	*s1)
 {
-	char	**str;
-	char	*s1;
 	int		count;
 
 	s1 = check_c(s);
+	free(s);
 	str = ft_split(s1, ',');
 	count = ft_count(s1);
+	free(s1);
 	if (str[0] && str[1] && str[2] && !str[3] && count == 2)
 	{
 		cub->sky[0] = ft_atoi(str[0]);
@@ -131,7 +132,11 @@ void	check_ceil(char *s, s_main *cub)
 		cub->sky[2] = ft_atoi(str[2]);
 		if (cub->sky[2] < 0 || cub->sky[2] > 256)
 			ft_errorr("more than 255");
+		ft_free(str);
 	}
 	else
+	{
+		ft_free(str);
 		ft_errorr("bad arguments");
+	}
 }

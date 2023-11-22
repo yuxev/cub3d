@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aasselma <aasselma@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aziyani <aziyani@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:45:47 by aziyani           #+#    #+#             */
-/*   Updated: 2023/11/21 00:42:26 by aasselma         ###   ########.fr       */
+/*   Updated: 2023/11/22 01:02:48 by aziyani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,10 +81,10 @@ void	txtrs_array(s_main	*m)
 				|| !ft_strncmp(m->map_db[i], "SO", 2) 
 				|| !ft_strncmp(m->map_db[i], "EA", 2) 
 				|| !ft_strncmp(m->map_db[i], "WE", 2))
-				{	
-					m->arr[j] = m->map_db[i];
-					j++;
-				}
+			{
+				m->arr[j] = m->map_db[i];
+				j++;
+			}
 		}
 		i++;
 	}
